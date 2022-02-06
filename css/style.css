@@ -30,6 +30,10 @@
     font-family: "Montserrat_light";
 }
 
+.fadeDown{
+    opacity: 0;
+	animation: fadeIn 1s ease-in both;
+}
 
 
 body{
@@ -58,16 +62,20 @@ main{
 }
 #travel{
     font-size:220px;
-    color: #b49983;
+    color: #b49983;    
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 2s linear 1s 1 normal both;
 }
 #made-easy{
     font-size:100px;
     color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
     margin-top: -160px;
     margin-left: 140px;
-}
-.shape-1{
-    margin-top:-200px;
+    animation: 4s ease 0s normal forwards 1 fadeIn;
 }
 
 .section{
@@ -95,6 +103,10 @@ h1{
     background-blend-mode: multiply;
     text-align: center;
     color: #fff;
+    transition: 0.5s;
+}
+.services div div:hover {
+    transform: scale(1.4);
 }
 /* width */
 ::-webkit-scrollbar {
@@ -116,16 +128,45 @@ h1{
     background: #555; 
   }
   
-  .cloud {
+  .paper {
     position: absolute;
-    top: 0px;
-    right: -500px;
-    opacity: .8;
-    animation: cloud 7s linear 0s infinite  reverse;
-    z-index: 99;
+    top: 35%;
+    left: 30%;
   }
   
-  @keyframes cloud {
-    from {right:-500px; }
-    to {right: 100%; }
+   
+
+  .nav-link{
+    transition:0.5s;
   }
+  .nav-link:hover{
+      transform: scale(1.1);
+      color: #b49983 !important;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+  }
+ 
+
+  @keyframes fadeDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
