@@ -130,8 +130,10 @@ h1{
   
   .paper {
     position: absolute;
-    top: 35%;
-    left: 30%;
+    margin-top: -100px;
+    margin-left: 110px;
+    animation: 4s ease 0s normal forwards 1 fadeIn;
+
   }
   
    
