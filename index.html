@@ -60,9 +60,9 @@
             </nav>
 
 
-            <div class="catter-pie  m-auto d-flex flex-column  w-50 text-center">
-                <img class="paper" width="200" src="/images/paperplane.png" />
+            <div id="middleText" class="catter-pie  m-auto d-flex flex-column  w-50 text-center">
                 <span class="linear-wipe" id="travel">Travel</span>
+                <img class="paper" width="200" src="/images/paperplane.png" />
                 <span id="made-easy">made easy</span>
             </div>
 
@@ -213,17 +213,15 @@
         </div>
 
     </main>
-    <script>
+    <!-- <script>
         var offset = $(".paper").offset();
         $(window).scroll(function (event) {
             var st = $(this).scrollTop();
-            $(".paper").css("left", st + offset.left);
-        });
+            $(".paper").css("top", offset.bottom);
 
-        $(".box").scroll(function () { //.box is the class of the div
-            $("span").css("display", "inline").fadeOut("slow");
+
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
