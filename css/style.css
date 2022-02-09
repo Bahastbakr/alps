@@ -54,7 +54,7 @@ main{
     height: 1000px;
     background-blend-mode: multiply;
 
-    background-image: url("/images/back-img.jpg"); 
+    background-image: url("https://1wtk5j28.tinifycdn.com/images/back-img.jpg"); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
