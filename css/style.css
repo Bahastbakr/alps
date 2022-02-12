@@ -53,7 +53,6 @@ main{
     border-top-left-radius: 40px;
     height: 1000px;
     background-blend-mode: multiply;
-
     background-image: url("https://1wtk5j28.tinifycdn.com/images/back-img.jpg"); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -198,4 +197,51 @@ h1{
 		opacity: 1;
 		transform: translate3d(0, 0, 0);
 	}
+}
+
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+
+    .paper{
+        display: none;
+    }
+    body{
+        margin: 10px;
+    }
+    #travel{
+        font-size:100px;
+    white-space: none;
+    }
+    #made-easy{
+        font-size:50px;
+        margin-left: 0;
+        margin-top: -60px;
+    }
+    .header {
+         font-size:40px;
+    }
+    .img-logo{
+        width:150px;
+    }
+    .text-justify-css{
+        padding: 10px !important;
+    }
+    .services div div {
+        width:100%;
+        margin-left:0;
+    }
+    .services div div:hover {
+        transform: none;
+    }
+    #main-section{
+        height: 600px;
+    }
+    .line{
+        display: none;
+    }
+    .collapse{
+
+        background-color:#0a4139;
+    }
 }

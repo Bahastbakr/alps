@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alps Travel and Tourism </title>
     <link rel="icon" href="/images/logo.png">
-    <link rel="stylesheet" href="https://1wtk5j28.tinifycdn.com/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -24,31 +24,34 @@
 <body>
     <main class="shadow">
         <section id="main-section">
-            <nav class="navbar navbar-expand-lg navbar-light p-5">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <nav class="navbar navbar-expand-lg navbar-light p-1 p-lg-5">
+                <div class=" container-fluid d-flex flex-row ">
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <a class="navbar-brand d-block d-lg-none" href="#"><img class="img-logo" src="images/logo.png"
+                            width="150" alt=""></a>
+
+                    <div class="collapse navbar-collapse p-4 rounded" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item ">
                                 <a class="nav-link text-light active" aria-current="page" href="/">Home</a>
                             </li>
-                            <li class="nav-item align-self-center text-light">
+                            <li class="nav-item line align-self-center text-light">
                                 <img src="/images/line.png" width="40" alt="line">
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-light" href="#who_r_we">About Us</a>
                             </li>
-                            <li class="nav-item align-self-center text-light">
+                            <li class="nav-item line align-self-center text-light">
                                 <img src="/images/line.png" width="40" alt="line">
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-light" href="#services">Our Services</a>
                             </li>
-                            <li class="nav-item align-self-center text-light">
+                            <li class="nav-item line align-self-center text-light">
                                 <img src="/images/line.png" width="40" alt="line">
                             </li>
                             <li class="nav-item">
@@ -56,7 +59,8 @@
                             </li>
                         </ul>
                     </div>
-                    <a class="navbar-brand" href="#"><img src="images/logo.png" width="200" alt=""></a>
+                    <a class="navbar-brand d-none d-lg-block" href="#"><img class="img-logo" src="images/logo.png"
+                            width="200" alt=""></a>
                 </div>
             </nav>
 
@@ -68,14 +72,14 @@
             </div>
 
 
-            <div class="d-flex justify-content-center" style="margin-top:-7%;">
+            <div class="d-none d-lg-flex justify-content-center" style="margin-top:-7%;">
                 <img src="/images/shape.png" class="img-fluid" width="70%" alt="shape">
             </div>
 
         </section>
         <section id="who_r_we" class="container" style="margin-top:15%;">
             <div class="d-flex flex-column text-center justify-content-center">
-                <h1 class="altuni mont-Light text-big">Who are <b class="mont-regular">we?</b> </h1>
+                <h1 class="altuni header mont-Light text-big">Who are <b class="mont-regular">we?</b> </h1>
                 <br>
                 <p class="text-light text-justify-css mont-Light container-fluid"
                     style="padding-left: 15%; padding-right:15%">
@@ -98,11 +102,11 @@
         </section>
         <section id="services" class="container divtofade" style="margin-top:10%;">
             <div class="d-flex flex-column text-center justify-content-center">
-                <span class="altuni mont-Light text-big">Our <b class="mont-bold">Services</b> </span>
+                <span class=" header altuni mont-Light text-big">Our <b class="mont-bold">Services</b> </span>
             </div>
             <div class="d-flex flex-column flex-lg-row justify-content-center services">
                 <div class="d-flex flex-column mont-Light">
-                    <div class="d-flex flex-column justify-content-center shadow-lg"
+                    <div class=" d-flex flex-column justify-content-center shadow-lg"
                         style="background-image: url(/images/local.jpg); border-top-left-radius: 40px;">
                         <h1>Local <b class="mont-regular">Trips</b></h1>
                     </div>
@@ -166,12 +170,13 @@
             style="margin-top:15%; padding:100px; background-image: url(/images/telephone.png); background-repeat: no-repeat; background-size: 90%;   background-position: 100% 70%;">
 
             <div class="d-flex flex-column text-center justify-content-center">
-                <h1 class="altuni mont-bold text-big">Contact </h1>
+                <h1 class=" header altuni mont-bold text-big">Contact </h1>
                 <br>
                 <div class="d-flex flex-column text-center gap-5 justify-content-center mt-5">
                     <div class="d-flex flex-column justify-content-center gap-3 ">
                         <i class="fa fa-phone text-light fa-lg fa-flip-horizontal" aria-hidden="true"></i>
-                        <div class="d-flex flex-row gap-4 align-self-center mont-Light">
+                        <div
+                            class="d-flex flex-row gap-1 gap-lg-4 flex-column flex-lg-row  align-self-center mont-Light">
                             <h4 class="text-light">0771 899 9191</h4>
                             <h4 class="text-light">0772 899 9191</h4>
                         </div>
@@ -195,7 +200,7 @@
 
             <div class="d-flex flex-column text-center gap-5  justify-content-center" style="margin-top:20%;">
                 <h1 class="text-light "> <b>Follow us On</b> </h1>
-                <div class="d-flex flex-row justify-content-center gap-4">
+                <div class="d-flex flex-lg-row flex-column justify-content-center gap-4">
                     <div class="d-flex flex-column text-light gap-3">
                         <i class="fab fa-instagram altuni fa-2x"></i>
                         <h5>@alpstravelco</h5>
@@ -208,8 +213,8 @@
             </div>
 
         </section>
-        <div class="d-flex flex-column text-center  w-25 m-auto  justify-content-center">
-            <hr class="altuni">
+        <div class="d-flex flex-column text-center  m-auto  justify-content-center">
+            <hr class="altuni w-25 align-self-center">
             <h6 class="text-light"><b>All rights reserved </b> Piano Digital Agency</h6>
         </div>
 
