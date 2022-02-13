@@ -200,6 +200,7 @@ h1{
 }
 
 
+
 /* mobile */
 @media only screen and (max-width: 600px) {
 
@@ -207,16 +208,19 @@ h1{
         display: none;
     }
     body{
-        margin: 10px;
+        margin: 0px;
+    }
+    main{
+        border-radius: 0px;
     }
     #travel{
-        font-size:100px;
+        font-size:150px;
     white-space: none;
     }
     #made-easy{
-        font-size:50px;
         margin-left: 0;
-        margin-top: -60px;
+        font-size:70px;
+        margin-top: -90px;
     }
     .header {
          font-size:40px;
@@ -230,18 +234,40 @@ h1{
     .services div div {
         width:100%;
         margin-left:0;
+        border-radius: 10px !important;
     }
-    .services div div:hover {
-        transform: none;
-    }
+    .services div div:hover{
+        transform: scale(0.9);
+        transition: 0s;
+      }
+      .services div {
+        margin-top: 0 !important;
+      }
+
+      #middleText{
+          align-self: center;
+          height:max-content;
+          width: 100% !important;
+      }
+    
     #main-section{
-        height: 600px;
+       max-height: max-content;
+       flex-direction: column;
+       display:flex;
+       border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
     }
+    nav{
+        position: absolute !important;
+    }
+
+    
     .line{
         display: none;
     }
-    .collapse{
-
-        background-color:#0a4139;
+    .navbar-toggler:focus{
+        color: rgba(255, 255, 255, 0) !important;
+        border-color: rgba(255, 255, 255, 0) !important;
     }
+   
 }
