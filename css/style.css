@@ -204,9 +204,7 @@ h1{
 /* mobile */
 @media only screen and (max-width: 600px) {
 
-    .paper{
-        display: none;
-    }
+   
     body{
         margin: 0px;
         overflow-x: hidden !important;
@@ -221,7 +219,7 @@ h1{
     #made-easy{
         margin-left: 0;
         font-size:70px;
-        margin-top: -90px;
+        margin-top: -105px;
     }
     .header {
          font-size:40px;
@@ -247,17 +245,24 @@ h1{
           height:max-content;
           width: 100% !important;
       }
+      
+      .paper:hover {
+        margin-top: -1000px !important;
+      }
     
     #main-section{
         max-height: 100vh;
-        overflow: auto;
-               flex-direction: column;
+        overflow: auto;       flex-direction: column;
        display:flex;
        border-top-right-radius: 0px;
     border-top-left-radius: 0px;
     }
     nav{
         position: absolute !important;
+    }
+    .navbar-collapse {
+        background-color: #0a4139;
+        z-index: 100001;
     }
 
     .line{
