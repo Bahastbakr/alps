@@ -205,7 +205,7 @@ h1{
 @media only screen and (max-width: 600px) {
 
    
-    body{
+    html,body{
         margin: 0px;
         overflow-x: hidden !important;
     }
