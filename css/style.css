@@ -249,8 +249,9 @@ h1{
       }
     
     #main-section{
-       max-height: max-content;
-       flex-direction: column;
+        max-height: 100vh;
+        overflow: auto;
+               flex-direction: column;
        display:flex;
        border-top-right-radius: 0px;
     border-top-left-radius: 0px;
@@ -259,7 +260,6 @@ h1{
         position: absolute !important;
     }
 
-    
     .line{
         display: none;
     }
