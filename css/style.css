@@ -209,6 +209,7 @@ h1{
     }
     body{
         margin: 0px;
+        overflow-x: hidden !important;
     }
     main{
         border-radius: 0px;
