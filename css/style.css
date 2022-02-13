@@ -236,10 +236,7 @@ h1{
         margin-left:0;
         border-radius: 10px !important;
     }
-    .services div div:hover{
-        transform: scale(0.9);
-        transition: 0s;
-      }
+   
       .services div {
         margin-top: 0 !important;
       }
